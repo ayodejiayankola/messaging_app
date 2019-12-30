@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel {{ date('y-m-d')}}
+                 Messaging App
                 </div>
 
                 <div class="links">

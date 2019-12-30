@@ -11,4 +11,11 @@
 |
 */
 
-Route::get('/' , 'HomeController@index');
+Route::get('/' ,function(){
+    return view('welcome');
+});
+Route::post('/create' , 'MessageController@create');
+Route::get('/message/{id}' , 'MessageController@view');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
