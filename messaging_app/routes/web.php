@@ -18,4 +18,4 @@ Route::post('/create' , 'MessageController@create');
 Route::get('/message/{id}' , 'MessageController@view');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profiles/{profile}', 'ProfilesController@index')->name('profile.show');

@@ -8,15 +8,15 @@
                
         </div>
         <div class="col-9 pt-5">
-            <div><h1>          {{ Auth::user()->username}} </h1></div>
+        <div><h1>         {{$profile->username}}</h1></div>
             <div class="d-flex" >
                 <div class="pr-3"><strong>10</strong> posts</div>
                 <div class="pr-3"><strong>2500</strong> followers</div>
                 <div class="pr-3"><strong>210</strong> following</div>
             </div>
-            <div>Freecodecamp.org</div>
-            <div>If the route accepts parameters, you may pass them as the second argument to the method:</div>
-            <div><a href="#">Freecodecamp.org</a></div>
+            <div> {{$profile->profile->title}}</div>
+            <div> {{$profile->profile->description}}</div>
+            <div><a href="#"> {{$profile->profile->url}}</a></div>
         </div>
     </div>
     <div class="row pt-4">
